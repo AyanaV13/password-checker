@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amazon Fall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="d-flex" id="navbar-container">
+      <nav class="navbar navbar-expand-lg" style="background-color: #d5c6b9;" data-bs-theme="light" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Amazon Fall</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!------------------- Deliver to ------------------------->
+              <li class="nav-item">
+                <div class="container deliver">
+                  <a class="nav-link" aria-current="page" href="#" id="deliver">Deliver to Arlington 76011</a>
+                  <a class="nav-link" aria-current="page" href="#" id="deliver">Update location</a>
+                </div>
+              </li>
+            </ul>
+            <!--------------------- Search ----------------------------->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search Amazon" aria-label="Search" id="search"/>
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-item">
+                  Account & Lists
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Browsing History</a></li>
+                  <li><a class="dropdown-item" href="#">Prime Subscription</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="nav-item">Returns & Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <img src="/Pictures/shopping-cart.png" width="30px">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="nav-item">
+                  Sign in
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!----------------------- Main Container --------------------------->
+    <div class="d-flex" id="main-container">
+
+      <div class="container text-center">
+        <div class="row" id="rows">
+          <!-- Fall favorites -->
+          <div class="col shadow p-3 mb-5 rounded" id="card">
+            <p id="title">Premium fall favorites</p>
+            <div class="container text-center">
+              <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Comfort</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10384_GW-HP_DQC_Curated_Comfort_186x116._SY116_CB803329695_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Hosting</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10386_GW-HP_DQC_ElevatedGatherings_186x116_v2._SY116_CB803686081_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Elevated Styles</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10389_GW-HP_DQC_SeasonalFallEdit_186x116_v2._SY116_CB803686081_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Under $200</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10391_GW-HP_DQC_Under200_186x116._SY116_CB803329695_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Sport gear -->
+          <div class="col shadow p-3 mb-5 rounded" id="card">
+            <p id="title">Fall sports gear</p>
+            <div class="container text-center">
+              <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Football</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9492_DQC_1x_186x116._SY116_CB803742929_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Soccer</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9493_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Golf</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9495_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Racquet sports</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9494_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+              </div>            
+          </div>
+
+          <!-- Halloween -->
+          <div class="col shadow p-3 mb-5 rounded" id="card">
+            <p id="title">Shop fall fashion</p>
+            <div class="container text-center">
+              <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Denim</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_denim_quad_desktop_372x232_01_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Boots</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fashion/Quad_Cards/Fashion_Fall25_6878_GW-HP_DQC_SW_186x116_1x._SY116_CB803583013_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Sweaters</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_sweaters_quad_desktop_372x232_03_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Jackets</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_jackets_quad_desktop_372x232_04_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Best sellers -->
+          <div class="col shadow p-3 mb-5 rounded" id="card-2">
+            <p id="title-2">Best Sellers in Beauty & Personal Care</p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/61occWCJN-L._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/71eFYqXRGoL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/51lP01--ejL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/61An0jiJFvL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/61K6cQhw4EL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/51ZgUfRut6L._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/615DOoCI6xL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                  </ul>
+                </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/71Mcspt-6AL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/51Qiwz3ZiaL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/61581VJZ9EL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/51H5SkeGANL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/71DVWpXOqGL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/61leLgR06vL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                    <li class="list-group-item">
+                      <img src="https://m.media-amazon.com/images/I/51Kx4Wt+VqL._AC_SY200_.jpg" id="care-img" width="150" height="200">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>      
+
+
+    </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>
