@@ -84,6 +84,34 @@ body {
   background-color: rgba(0, 0, 0, .5);
 }
 
+/* Nav and Tab container */
+#tab-container {
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: black;
+}
+
+.trending-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#trending {
+  padding: 0;
+}
+
+#trending-link {
+  text-decoration: none;
+  color: black;
+}
+
+#trending-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
 /* Mobile View */
 @media screen and (max-width: 550px){
 #navbar-container {
