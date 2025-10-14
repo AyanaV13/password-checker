@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/product-page/index.css">
   </head>
   <body>
-    <!-- Navbar -->
+    <!---------------------- Navbar        ---------------------------->
     <div class="d-flex" id="navbar-container">
       <nav class="navbar navbar-expand-lg" style="background-color: #d5c6b9;" data-bs-theme="light" id="navbar">
         <div class="container-fluid">
@@ -62,7 +62,7 @@
       </nav>
     </div>
 
-    <!----------------------- Nav and tabs ----------------------------->
+    <!---------------------- Nav and tabs ----------------------------->
     <div class="d-flex" id="tab-container">
       <ul class="nav">
         <!-- Offcanvas -->
@@ -126,24 +126,96 @@
           <a class="nav-link" href="#">Todays Deals</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gift Cards</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Groceries</a>
+          <!-- Gift card dropdown -->
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <p class="grocery-title">Groceries</p>
+            <div class="container" id="grocery-dropdown">
+              <div class="row" id="row1">
+                <div class="col">
+                  <div class="card mb-3" id="card-container">
+                    <div class="row g-0">
+                      <div class="col">
+                        <img src="https://m.media-amazon.com/images/G/01/ALMStores/CGI/SF-Ingress-map-pin-bg-map-2x.png" class="img-fluid rounded-start" id="map" width="50">
+                      </div>
+                      <div class="col">
+                        <div class="card-body">
+                          <p class="card-text1">Find a nearby store</p>
+                          <p class="card-text2"><small class="text-body-secondary">7 locations near 75010</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                </div>
+              </div>
+              <div class="row d-flex" id="row2">
+                <div class="col" id="groc-col1">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/31PgK9rqbzL._SY269_FMpng_.png" width="125" id="grocery-img">
+                  </a>
+                </div>
+                <div class="col" id="groc-col2">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41DJvurFQ-L._SY301_FMpng_.png" width="125" id="grocery-img">
+                  </a>
+                </div>
+                <div class="col" id="groc-col3">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/21UW5qdF1BL._SY189_FMpng_.png" width="100" id="grocery-img">
+                  </a>
+                </div>
+              </div>
+              <div class="row d-flex" id="row2">
+                <div class="col" id="groc-col4">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/21qag6zqwqL._SY301_FMpng_.png" width="125" id="grocery-img2">
+                  </a>
+                </div>
+                <div class="col" id="groc-col5">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/31JedbcRiUL._SY298_FMpng_.png" width="100" id="grocery-img2">
+                  </a>
+                </div>
+              </div>              
+            </div>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Groceries</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gift Cards</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <p class="gc-title">Gift Cards</p>
+            <div class="container" id="gc-dropdown">
+              <div class="row" id="row1">
+                <div class="col" id="gc-col1">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/Flyout/Consumer/2025/Lifestyle_Test/Flyout_Nav_Shop-All_TL_EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+                <div class="col" id="gc-col2">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_SendEGC_US-EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+              </div>
+              <div class="row" id="row2">
+                <div class="col" id="gc-col3">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_ShopPGC_US-EN._CB798689850_.png" width="150" id="gc-img">
+                  </a>
+                </div>
+                <div class="col" id="gc-col4">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_Balance_US-BL_EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+              </div>             
+            </div>          
+            <hr id="divider">
+            <a href="">
+              <p id="footer" class="text-center">Browse All Gift Cards</p>
+            </a>
           </ul>
+
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sports & Outdoors</a>
@@ -155,13 +227,9 @@
           <a class="nav-link" href="#">Customer Service</a>
         </li>
       </ul>
-
-
-
     </div>
 
-
-    <!----------------------- Main Container --------------------------->
+    <!---------------------- Main Container --------------------------->
     <div class="d-flex" id="main-container">
 
       <div class="container text-center">
@@ -237,7 +305,7 @@
           </div>
 
           <!-- Halloween -->
-          <div class="col shadow p-3 mb-5 rounded" id="card">
+          <div class="col shadow p-3 mb-5 rounded" id="card-fashion">
             <p id="title">Shop fall fashion</p>
             <div class="container text-center">
               <div class="row">
