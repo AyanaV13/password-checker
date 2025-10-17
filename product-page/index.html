@@ -93,7 +93,7 @@
                   </ul>
                 </div> 
                 <hr class="offcanvas-line">                              
-                <div class="dropdown mt-3">
+                <!-- <div class="dropdown mt-3">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                     Dropdown button
                   </button>
@@ -102,6 +102,43 @@
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
+                </div> -->
+                <div class=" d-flex" id="department-cont">
+                  <p>Shop by Department</p>
+                  <a  href="" >
+                    <p class="d-flex" id="link">Clothing, Shoes, Jewelry & Watches
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a href="">
+                    <p class="d-flex" id="link">Amazon Fresh
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a  href="" >
+                    <p class="d-flex" id="link">Whole Foods Market
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a href="">
+                    <p class="d-flex" id="link">Books
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  
+                  <div class="dropup-center dropup">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                      See all
+                      
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>  
+                  <hr class="offcanvas-line">              
                 </div>
               </div>
             </div>
@@ -229,11 +266,35 @@
       </ul>
     </div>
 
-    <!---------------------- Main Container --------------------------->
-    <div class="d-flex" id="main-container">
+    <!---------------------- Advertisement ---------------------------->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://m.media-amazon.com/images/I/71TmMc5LBdL._SX3000_.jpg" class="d-block w-100" height="400" id="ad-item">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://m.media-amazon.com/images/I/718YKjGlX3L._SX3000_.jpg" class="d-block w-100" height="400" id="ad-item">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://m.media-amazon.com/images/I/81VA1wB+RFL._SX3000_.jpg" class="d-block w-100" height="400" id="ad-item">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" id="car-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" id="car-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>    
 
-      <div class="container text-center">
+    <!---------------------- Main Container --------------------------->
+    <div class=" d-flex" id="main-container">
+
+      <div class="text-center">
         <div class="row" id="rows">
+
           <!-- Fall favorites -->
           <div class="col shadow p-3 mb-5 rounded" id="card">
             <p id="title">Premium fall favorites</p>
@@ -242,13 +303,13 @@
                   <div class="col container" id="col">
                     <p id="sub-title">Comfort</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10384_GW-HP_DQC_Curated_Comfort_186x116._SY116_CB803329695_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10384_GW-HP_DQC_Curated_Comfort_186x116._SY116_CB803329695_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Hosting</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10386_GW-HP_DQC_ElevatedGatherings_186x116_v2._SY116_CB803686081_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10386_GW-HP_DQC_ElevatedGatherings_186x116_v2._SY116_CB803686081_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
@@ -256,13 +317,13 @@
                   <div class="col container" id="col">
                     <p id="sub-title">Elevated Styles</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10389_GW-HP_DQC_SeasonalFallEdit_186x116_v2._SY116_CB803686081_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10389_GW-HP_DQC_SeasonalFallEdit_186x116_v2._SY116_CB803686081_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Under $200</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10391_GW-HP_DQC_Under200_186x116._SY116_CB803329695_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Premium/Homepage/Quad_Cards/Premium_Fall25_10391_GW-HP_DQC_Under200_186x116._SY116_CB803329695_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
@@ -277,13 +338,13 @@
                   <div class="col container" id="col">
                     <p id="sub-title">Football</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9492_DQC_1x_186x116._SY116_CB803742929_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9492_DQC_1x_186x116._SY116_CB803742929_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Soccer</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9493_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9493_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
@@ -291,13 +352,13 @@
                   <div class="col container" id="col">
                     <p id="sub-title">Golf</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9495_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9495_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Racquet sports</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9494_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fitness/Homepage/Quad_Cards/Fitness_Fall25_9494_DQC_1x_186x116._SY116_CB803584703_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
@@ -305,20 +366,20 @@
           </div>
 
           <!-- Halloween -->
-          <div class="col shadow p-3 mb-5 rounded" id="card-fashion">
+          <div class="col shadow p-3 mb-5 rounded" id="card">
             <p id="title">Shop fall fashion</p>
             <div class="container text-center">
               <div class="row">
                   <div class="col container" id="col">
                     <p id="sub-title">Denim</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_denim_quad_desktop_372x232_01_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_denim_quad_desktop_372x232_01_low_res._SY116_CB801056518_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Boots</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fashion/Quad_Cards/Fashion_Fall25_6878_GW-HP_DQC_SW_186x116_1x._SY116_CB803583013_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2025/CategoryFlips/Fall/Fashion/Quad_Cards/Fashion_Fall25_6878_GW-HP_DQC_SW_186x116_1x._SY116_CB803583013_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
@@ -326,22 +387,57 @@
                   <div class="col container" id="col">
                     <p id="sub-title">Sweaters</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_sweaters_quad_desktop_372x232_03_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_sweaters_quad_desktop_372x232_03_low_res._SY116_CB801056518_.jpg" id="item" width="125">
                     </a>
                   </div>
                   <div class="col container" id="col">
                     <p id="sub-title">Jackets</p>
                     <a href="#">
-                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_jackets_quad_desktop_372x232_04_low_res._SY116_CB801056518_.jpg" id="item" width="150">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2025/Sept/mp_20250916_jackets_quad_desktop_372x232_04_low_res._SY116_CB801056518_.jpg" id="item" width="125">
                     </a>
                   </div>
                 </div>
               </div>
           </div>
+
+          <!-- Designer -->
+          <div class="col shadow p-3 mb-5 rounded" id="designer-card">
+            <p id="title">Fall pre-loved designer must-haves</p>
+            <div class="container text-center">
+              <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Louis Vuitton Minis</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_7_186x116._SY116_CB804224994_.jpg" id="item" width="125">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Dior Sattle Bag</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_6_186x116._SY116_CB804224994_.jpg" id="item" width="125">
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col container" id="col">
+                    <p id="sub-title">Chanel Classic Flap</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_5_186x116._SY116_CB804224994_.jpg" id="item" width="125">
+                    </a>
+                  </div>
+                  <div class="col container" id="col">
+                    <p id="sub-title">Fendi Baguette</p>
+                    <a href="#">
+                      <img src="https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_8_186x116._SY116_CB804224994_.jpg" id="item" width="125">
+                    </a>
+                  </div>
+                </div>
+              </div>            
+          </div>
         </div>
 
+        <!-- Best sellers -->
         <div class="row">
-          <!-- Best sellers -->
           <div class="col shadow p-3 mb-5 rounded" id="card-2">
             <p id="title-2">Best Sellers in Beauty & Personal Care</p>
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -410,14 +506,9 @@
           </div>
 
         </div>
-      </div>      
-
+        </div> 
 
       </div>
-
-
-
-
     </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
