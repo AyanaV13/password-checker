@@ -146,6 +146,11 @@ body {
 #link {
   flex-direction: row;
   justify-content: space-between;
+  color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Grocery dropdown */
@@ -248,7 +253,7 @@ a {
 
   #search {
   width: 300px;
-}
+  }
 
   .deliver {
     padding-left: 3px;

@@ -1,0 +1,213 @@
+body {
+  background-color: white;
+}
+
+/* Navbar */
+#navbar-container {
+  justify-content: center;
+  color: black;
+}
+
+#navbar {
+  width: 100%;
+}
+#navbarSupportedContent {
+  justify-content: space-evenly;
+}
+#deliver {
+  padding: 0;
+  font-weight: 600;
+  color: black;
+}
+
+#search {
+  width: 650px;
+  border: 1px solid rgb(11, 11, 11);
+}
+
+#nav-item {
+  margin: 5px 0 0 5px;
+  padding-bottom: 0px;
+  color: black;
+}
+
+/* Nav and Tab container */
+#tab-container {
+  justify-content: flex-start;
+  background-color: rgb(95, 70, 52);
+}
+
+.nav-link {
+  color: white;
+}
+
+.trending-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#trending {
+  padding: 0;
+}
+
+#trending-link {
+  text-decoration: none;
+  color: black;
+}
+
+#trending-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/* All Offcanvas */
+#department-cont {
+  flex-direction: column;
+}
+
+#link {
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Sub tabs */
+#sub-tab {
+  justify-content:flex-start;
+  margin-left: 15px;
+}
+
+.divider {
+  margin: 0;
+}
+
+#sub-tab-link {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Main Container */
+#main-container {
+  flex-direction: row;
+}
+
+#header {
+  margin-left: 15px;
+  display: inline-block;
+
+}
+
+#top {
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#bottom {
+  font-size: 12px;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+/* Side tabs */
+
+#side-link, .any-dept{
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+#side-link:hover {
+  text-decoration: underline;
+}
+
+.any-dept {
+  font-weight: 600;
+}
+
+#nav-column {
+  width: 200px;
+}
+
+/* Card Rows */
+.title {
+  flex-direction: row;
+}
+
+.title1, .title2 {
+  text-align: left;
+  margin-top: 110px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.title2 {
+  margin-top: 10px;
+}
+
+.see-more {
+  align-content: end;
+  padding-left: 8px;
+  padding-bottom: 3px;
+  color: blue;
+  font-size: 14px;
+}
+
+.card, .list-group-item{
+  border: none;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+.rate-price {
+  flex-direction: column;
+  text-align: left;
+}
+
+.rate {
+  font-size: 12px;
+  margin: 0;
+}
+
+.price {
+  color: rgb(154, 35, 35);
+  margin-top: 5px;
+}
+
+span{
+  background-color: black;
+  border-radius: 8px;
+}
+
+.carousel-control-prev {
+  justify-content: start;
+}
+
+.carousel-control-next {
+  justify-content: end;
+
+}
+
+.list-group {
+  justify-content: center;
+}
+
+
+#details, .card-text {
+  text-decoration: none;
+}
