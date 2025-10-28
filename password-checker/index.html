@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <div class="d-flex" id="navbar-container">
+      <nav class="navbar navbar-expand-lg" style="background-color: #d5c6b9;" data-bs-theme="light" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Amazon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!------------------- Deliver to ------------------------->
+              <li class="nav-item">
+                <div class="container deliver">
+                  <a class="nav-link" aria-current="page" href="#" id="deliver">Deliver to Arlington 76011</a>
+                  <a class="nav-link" aria-current="page" href="#" id="deliver">Update location</a>
+                </div>
+              </li>
+            </ul>
+            <!--------------------- Search ----------------------------->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search Amazon" aria-label="Search" id="search"/>
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-item">
+                  Account & Lists
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Browsing History</a></li>
+                  <li><a class="dropdown-item" href="#">Prime Subscription</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="nav-item">Returns & Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <img src="/Pictures/shopping-cart.png" width="30px">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/password-checker/index.html" id="nav-item">
+                  Sign in
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!---------------------- Nav and tabs ----------------------------->
+    <div class="d-flex" id="tab-container">
+      <ul class="nav">
+        <!-- Offcanvas -->
+        <li class="nav-item">
+          <div class="nav-left d-flex">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+              <img src="https://cdn-icons-png.flaticon.com/128/3917/3917762.png" width="25">
+            </a>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Hello, Sign in</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <p class="trending-title">Trending</p>
+                  <ul id="trending">
+                    <li id="trending-item">
+                      <a href="" id="trending-link">Best Sellers</a>
+                    </li>
+                    <li id="trending-item">
+                      <a href="" id="trending-link">New Releases</a>
+                    </li>
+                    <li id="trending-item">
+                      <a href="" id="trending-link">Movers & Shakers</a>
+                    </li>
+                  </ul>
+                </div> 
+                <hr class="offcanvas-line">                              
+                <!-- <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div> -->
+                <div class=" d-flex" id="department-cont">
+                  <p>Shop by Department</p>
+                  <a  href="" >
+                    <p class="d-flex" id="link">Clothing, Shoes, Jewelry & Watches
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a href="">
+                    <p class="d-flex" id="link">Amazon Fresh
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a  href="" >
+                    <p class="d-flex" id="link">Whole Foods Market
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  <a href="">
+                    <p class="d-flex" id="link">Books
+                      <img src="/Pictures/angle-small-right.png" width="20" id="arrow">
+                    </p>
+                  </a>
+                  
+                  <div class="dropup-center dropup">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                      See all
+                      
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>  
+                  <hr class="offcanvas-line">              
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Amazon Haul</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="best-sellers.html">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="basics.html">Amazon Basics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="new-releases.html">New Releases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registry.html">Registry</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="deals.html">Todays Deals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="groceries.html" role="button" aria-expanded="false">Groceries</a>
+          <!-- Gift card dropdown -->
+          <ul class="dropdown-menu">
+            <p class="grocery-title">Groceries</p>
+            <div class="container" id="grocery-dropdown">
+              <div class="row" id="row1">
+                <div class="col">
+                  <div class="card mb-3" id="card-container">
+                    <div class="row g-0">
+                      <div class="col">
+                        <img src="https://m.media-amazon.com/images/G/01/ALMStores/CGI/SF-Ingress-map-pin-bg-map-2x.png" class="img-fluid rounded-start" id="map" width="50">
+                      </div>
+                      <div class="col">
+                        <div class="card-body">
+                          <p class="card-text1">Find a nearby store</p>
+                          <p class="card-text2"><small class="text-body-secondary">7 locations near 75010</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                </div>
+              </div>
+              <div class="row d-flex" id="row2">
+                <div class="col" id="groc-col1">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/31PgK9rqbzL._SY269_FMpng_.png" width="125" id="grocery-img">
+                  </a>
+                </div>
+                <div class="col" id="groc-col2">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41DJvurFQ-L._SY301_FMpng_.png" width="125" id="grocery-img">
+                  </a>
+                </div>
+                <div class="col" id="groc-col3">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/21UW5qdF1BL._SY189_FMpng_.png" width="100" id="grocery-img">
+                  </a>
+                </div>
+              </div>
+              <div class="row d-flex" id="row2">
+                <div class="col" id="groc-col4">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/21qag6zqwqL._SY301_FMpng_.png" width="125" id="grocery-img2">
+                  </a>
+                </div>
+                <div class="col" id="groc-col5">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/31JedbcRiUL._SY298_FMpng_.png" width="100" id="grocery-img2">
+                  </a>
+                </div>
+              </div>              
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gift Cards</a>
+          <ul class="dropdown-menu">
+            <p class="gc-title">Gift Cards</p>
+            <div class="container" id="gc-dropdown">
+              <div class="row" id="row1">
+                <div class="col" id="gc-col1">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/Flyout/Consumer/2025/Lifestyle_Test/Flyout_Nav_Shop-All_TL_EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+                <div class="col" id="gc-col2">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_SendEGC_US-EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+              </div>
+              <div class="row" id="row2">
+                <div class="col" id="gc-col3">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_ShopPGC_US-EN._CB798689850_.png" width="150" id="gc-img">
+                  </a>
+                </div>
+                <div class="col" id="gc-col4">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/G/01/GiftCards/2025/Q4/VX-2825/Flyout_Nav_Balance_US-BL_EN.png" width="150" id="gc-img">
+                  </a>
+                </div>
+              </div>             
+            </div>          
+            <hr id="divider">
+            <a href="">
+              <p id="footer" class="text-center">Browse All Gift Cards</p>
+            </a>
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports & Outdoors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customer Service</a>
+        </li>
+      </ul>
+    </div>
+
+    <!---------------------- Main container --------------------------->
+    <div class="container main-container shadow mt-5">
+
+      
+
+      <!-- Email and Password container -->
+      <div class="container mt-5 email-pwd-container">
+        <form>
+          <div class="container text-center mb-4 sign-up">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.IULuLwo_sNsnqr3ylE9ABQHaCl?rs=1&pid=ImgDetMain&o=7&rm=3" width="150">
+            <p>Sign up</p>
+            <hr class="divider">
+          </div>
+
+          <div class="alert alert-danger mt-4" id="user-message" role="alert" style="display: none;">
+            Please enter a valid username
+          </div>
+          <div class="alert alert-danger mt-4" id="alert-message" role="alert" style="display: none;">
+            Please enter a valid password
+          </div>
+          
+          <div class="row mb-3">
+            <label for="user3" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="user3" oninput="showUserChecks()">
+            </div>
+          </div>
+
+          <!-- email Checker Container -->
+          <div class="container d-flex pwd-checker-container mb-3" >
+            <ul class="list-group list-group-container" style="display: none;" id="user-checker">
+              <li class="list-group-item d-flex justify-content-between align-items-center" id="user-length-checker-container">
+                Atleast 8 characters long
+                <span id="user-length-checker"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" id="user-lowercase-checker-container">
+                Atleast one lowercase
+                <span id="user-lowercase-checker"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" id="user-uppercase-checker-container">
+                Atleast one uppercase
+                <span id="user-uppercase-checker"></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" oninput="showPasswordChecks()">
+            </div>
+          </div>
+        </form> 
+      </div>
+
+      <div class="alert alert-success mt-4" id="alert-strong" role="alert" style="display: none;">
+        Password is Strong
+      </div>
+      <div class="alert alert-warning mt-4" id="alert-moderate" role="alert" style="display: none;">
+        Password is Moderate
+      </div>
+      <div class="alert alert-danger mt-4" id="alert-weak" role="alert" style="display: none;">
+        Password is weak
+      </div>
+
+      <!-- Password Checker Container -->
+      <div class="container d-flex pwd-checker-container">
+        <ul class="list-group list-group-container" style="display: none;" id="password-checker">
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="length-checker-container">
+            Atleast 8 characters long
+            <span id="length-checker"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="lowercase-checker-container">
+            Atleast one lowercase
+            <span id="lowercase-checker"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="uppercase-checker-container">
+            Atleast one uppercase
+            <span id="uppercase-checker"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="number-checker-container">
+            Atleast one number
+            <span id="number-checker"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="special-checker-container">
+            Atleast one special character
+            <span id="special-checker"></span>
+          </li>
+        </ul>
+      </div>
+      <!-- Submit button -->
+       <div class="container d-flex mb-3" id="submit-button-container">
+        <button onclick="passwordChecker(); userChecker()" type="submit" class="btn btn-success mt-3 submit-button">Create Account</button>
+       </div>
+      
+    </div>
+
+
+      
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+  
